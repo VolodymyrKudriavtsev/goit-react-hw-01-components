@@ -1,5 +1,3 @@
-// import user from '../../data/user.json';
-
 export default function Profile() {
   return (
     <div className="profile">

@@ -1,6 +1,6 @@
-import Profile from './pofile/profile';
+import Profile from './Profile/Profile';
 import Statistics from './Statistics/Statistics';
-import FriendList from './Friend-list/Friend-list';
+import FriendList from './FriendList/FriendList';
 import TransactionHistory from './TransactionHistory/TransactionHistory';
 
 export const App = () => {
