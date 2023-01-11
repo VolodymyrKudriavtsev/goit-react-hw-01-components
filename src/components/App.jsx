@@ -1,19 +1,18 @@
 import Profile from './pofile/profile';
+import Statistics from './Statistics/Statistics';
+import FriendList from './Friend-list/Friend-list';
+import TransactionHistory from './TransactionHistory/TransactionHistory';
 
 export const App = () => {
   return (
-    <Profile />
-    // <div
-    //   style={{
-    //     height: '100vh',
-    //     display: 'flex',
-    //     justifyContent: 'center',
-    //     alignItems: 'center',
-    //     fontSize: 40,
-    //     color: '#010101',
-    //   }}
-    // >
-    //   React homework template
-    // </div>
+    <>
+      <Profile />
+      <hr />
+      <Statistics />
+      <hr />
+      <FriendList />
+      <hr />
+      <TransactionHistory />
+    </>
   );
 };
