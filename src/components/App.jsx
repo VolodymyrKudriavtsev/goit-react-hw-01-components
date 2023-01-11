@@ -1,12 +1,20 @@
 import Profile from './Profile/Profile';
+import user from '../user.json';
+
 import Statistics from './Statistics/Statistics';
 import FriendList from './FriendList/FriendList';
 import TransactionHistory from './TransactionHistory/TransactionHistory';
 
-export const App = () => {
+const App = () => {
   return (
     <>
-      <Profile />
+      <Profile
+        username={user.username}
+        tag={user.tag}
+        location={user.location}
+        avatar={user.avatar}
+        stats={user.stats}
+      />
       <hr />
       <Statistics />
       <hr />
@@ -16,3 +24,5 @@ export const App = () => {
     </>
   );
 };
+
+export default App;
