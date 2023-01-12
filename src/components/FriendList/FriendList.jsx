@@ -1,14 +1,13 @@
-// import friends from '../../dataAll/friends.json';
 import FriendListItem from 'components/FriendListItem/FriendListItem';
 
-const FriendList = () => (
-  <ul className="friend-list">
-    <FriendListItem />
-    <FriendListItem />
-    <FriendListItem />
-    <FriendListItem />
-    <FriendListItem />
-  </ul>
-);
+const FriendList = ({ friends }) => {
+  console.log(friends);
+  {
+    friends.map(friend => (
+      <FriendListItem avatar={friend.avatar} name={friend.name} />
+    ));
+  }
+  <ul className="friend-list"></ul>;
+};
 
 export default FriendList;

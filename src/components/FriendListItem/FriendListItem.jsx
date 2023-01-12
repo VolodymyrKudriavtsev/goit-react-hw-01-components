@@ -1,8 +1,8 @@
-const FriendListItem = () => (
-  <li className="item">
-    <span className="status"></span>
-    <img className="avatar" src="" alt="User avatar" width="48" />
-    <p className="name"></p>
+const FriendListItem = props => (
+  <li class="item">
+    <span class="status"></span>
+    <img class="avatar" src={props.avatar} alt="User avatar" width="48" />
+    <p class="name">{props.name}</p>
   </li>
 );
 
