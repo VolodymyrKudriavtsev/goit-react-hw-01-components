@@ -1,13 +1,14 @@
 import FriendListItem from 'components/FriendListItem/FriendListItem';
 
 const FriendList = ({ friends }) => {
-  console.log(friends);
-  {
-    friends.map(friend => (
-      <FriendListItem avatar={friend.avatar} name={friend.name} />
-    ));
-  }
-  <ul className="friend-list"></ul>;
+  return (
+    <ul className="friend-list">
+      {friends.map(({ id, avatar, name }) => (
+        <FriendListItem key={id} avatar={avatar} name={name} />
+      ))}
+    </ul>
+  );
 };
 
 export default FriendList;
+// ! isOnline

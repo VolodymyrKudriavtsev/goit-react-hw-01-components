@@ -8,6 +8,7 @@ import FriendList from './FriendList/FriendList';
 import friends from '../friends.json';
 
 import TransactionHistory from './TransactionHistory/TransactionHistory';
+import transactions from '../transactions.json';
 
 const App = () => {
   return (
@@ -19,11 +20,12 @@ const App = () => {
         avatar={user.avatar}
         stats={user.stats}
       />
+      <hr />
       <Statistics stats={data} />
       <hr />
       <FriendList friends={friends} />
       <hr />
-      <TransactionHistory />
+      <TransactionHistory items={transactions} />
     </>
   );
 };
