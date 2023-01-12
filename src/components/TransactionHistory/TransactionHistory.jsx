@@ -1,5 +1,3 @@
-// import transactions from '../../dataAll/transactions.json';
-
 const TransactionHistory = ({ items }) => {
   return (
     <table className="transaction-history">

@@ -21,6 +21,7 @@ const App = () => {
         stats={user.stats}
       />
       <hr />
+      <Statistics title="Upload stats" stats={data} />
       <Statistics stats={data} />
       <hr />
       <FriendList friends={friends} />
