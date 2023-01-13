@@ -1,4 +1,12 @@
 const TransactionHistory = ({ items }) => {
+  const elements = items.map(({ id, type, amount, currency }) => (
+    <tr key={id}>
+      <td>{type}</td>
+      <td>{amount}</td>
+      <td>{currency}</td>
+    </tr>
+  ));
+
   return (
     <table className="transaction-history">
       <thead>
@@ -9,17 +17,13 @@ const TransactionHistory = ({ items }) => {
         </tr>
       </thead>
 
-      <tbody>
-        {items.map(({ id, type, amount, currency }) => (
-          <tr key={id}>
-            <td>{type}</td>
-            <td>{amount}</td>
-            <td>{currency}</td>
-          </tr>
-        ))}
-      </tbody>
+      <tbody>{elements}</tbody>
     </table>
   );
 };
 
 export default TransactionHistory;
+
+TransactionHistory.defaultProps = {
+  items: [],
+};
