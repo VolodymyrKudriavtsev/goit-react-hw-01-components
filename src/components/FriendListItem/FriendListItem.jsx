@@ -1,4 +1,6 @@
-const FriendListItem = ({ avatar, name }) => {
+import PropTypes from 'prop-types';
+
+const FriendListItem = ({ avatar, name, isOnline }) => {
   return (
     <li className="item">
       <span className="status"></span>
@@ -10,3 +12,9 @@ const FriendListItem = ({ avatar, name }) => {
 
 export default FriendListItem;
 // ! isOnline
+
+FriendListItem.propTypes = {
+  avatar: PropTypes.string.isRequired,
+  isOnline: PropTypes.bool,
+  name: PropTypes.string.isRequired,
+};

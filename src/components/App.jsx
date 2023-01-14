@@ -20,11 +20,11 @@ const App = () => {
         avatar={user.avatar}
         stats={user.stats}
       />
-      <hr />
+
       <Statistics title="Upload stats" stats={data} />
-      <hr />
+
       <FriendList friends={friends} />
-      <hr />
+
       <TransactionHistory items={transactions} />
     </>
   );
