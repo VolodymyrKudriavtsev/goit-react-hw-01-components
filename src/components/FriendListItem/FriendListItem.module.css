@@ -1,0 +1,36 @@
+.item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.status {
+  display: block;
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.online {
+  background-color: #3cb371;
+}
+
+.offline {
+  background-color: #dc143c;
+}
+
+.avatar {
+  margin-right: 20px;
+  padding: 3px;
+  border-radius: 4px;
+  box-shadow: rgba(3, 102, 214, 0.5) 0px 0px 0px 2px;
+}
+
+.name {
+  margin: 0;
+  font-weight: bold;
+  font-size: 30px;
+}

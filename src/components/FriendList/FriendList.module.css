@@ -1,2 +1,10 @@
 .friend_list {
+  width: 300px;
+  margin: 20px auto 0;
+  padding: 0;
+  list-style: none;
+}
+
+.friend_list li:not(:last-child) {
+  margin-bottom: 15px;
 }
